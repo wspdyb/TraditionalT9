@@ -6,14 +6,15 @@ import java.util.Map;
 
 public class LangHelper {
     protected static final Locale RUSSIAN = new Locale("ru","RU");
-    protected static final Locale UKRAINIAN = new Locale("uk","UA");		
+    protected static final Locale UKRAINIAN = new Locale("uk","UA");
+    protected static final Locale HEBREW = new Locale("he","12");
 	public enum LANGUAGE {
 		// MAKE SURE THESE MATCH WITH values/const.xml
 		// (index, id) Where index is index in arrays like LOCALES and MUST increment and MUST be in
 		// the same order as arrays.xml/pref_lang_values, and id is the identifier used in
 		// the database and such. id should never change unless database update is done.
 		// id MUST increment in doubles (as the enabled languages are stored as an integer)
-		NONE(-1, -1), EN(0,1), RU(1,2), DE(2,4), FR(3,8), IT(4,16), UK(5,32);
+		NONE(-1, -1), EN(0,1), HE(1,64), RU(1,2), DE(2,4), FR(3,8), IT(4,16), UK(5,32);
 		public final int index;
 		public final int id;
 		// lookup map
@@ -48,6 +49,12 @@ public class LangHelper {
 					{R.drawable.ime_en_lang_lower, R.drawable.ime_en_lang_single, R.drawable.ime_en_lang_upper},
 					{R.drawable.ime_en_text_lower, R.drawable.ime_en_text_single, R.drawable.ime_en_text_upper},
 					{R.drawable.ime_number},
+			},
+		        {
+					// Hebrew resources
+					{R.drawable.ime_he_lang_lower, R.drawable.ime_he_lang_single, R.drawable.ime_he_lang_upper}, //LANG
+					{R.drawable.ime_he_text_lower, R.drawable.ime_he_text_single, R.drawable.ime_he_text_upper}, //TEXT
+					{R.drawable.ime_number}, //NUM
 			},
 			{
 					// Russian resources
