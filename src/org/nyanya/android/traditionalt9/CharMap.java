@@ -44,6 +44,37 @@ public class CharMap {
 		enMap.put('ì', 4); enMap.put('ò', 8); // Italian chars
 		Map<Character, Integer> endefritmap = Collections.unmodifiableMap(enMap);
 		CHARTABLE.add(0, endefritmap);
+		
+		// Hebrew		Map<Character, Integer> heMap = new HashMap<Character, Integer>();
+		heMap.put('.', 1); heMap.put(',', 1); heMap.put('!', 1); heMap.put('?', 1);
+		heMap.put('-', 1); heMap.put('"', 1); heMap.put('\'', 1); heMap.put('@', 1);
+		heMap.put('#', 1); heMap.put('$', 1); heMap.put('%', 1); heMap.put('&', 1);
+		heMap.put('*', 1); heMap.put('(', 1); heMap.put(')', 1); heMap.put(':', 1);
+		heMap.put(';', 1); heMap.put('/', 1); heMap.put('+', 1); heMap.put('=', 1);
+		heMap.put('<', 1); heMap.put('>', 1); heMap.put('^', 1); heMap.put('_', 1);
+		heMap.put('~', 1); heMap.put('1', 1);
+		heMap.put('ד', 2); heMap.put('ה', 2);
+		heMap.put('ו', 2); heMap.put('2', 2);
+		heMap.put('א', 3); heMap.put('ב', 3);
+		heMap.put('ג', 3); heMap.put('3', 3);
+		heMap.put('מ', 4); heMap.put('ם', 4);
+		heMap.put('נ', 4); heMap.put('ן', 4); heMap.put('4', 4);		
+		heMap.put('י', 5);
+		heMap.put('כ', 5); heMap.put('ך', 5); heMap.put('ל', 5); heMap.put('5', 5);
+		heMap.put('ז', 6); heMap.put('ח', 6); heMap.put('ט', 6); heMap.put('6', 6);
+		heMap.put('ר', 7); heMap.put('ש', 7); heMap.put('ת', 7); heMap.put('7', 7);
+		heMap.put('צ', 8); heMap.put('ץ', 8); heMap.put('ק', 8); heMap.put('8', 8);
+		heMap.put('ס', 9); heMap.put('ע', 9); heMap.put('פ', 9); heMap.put('ף', 9);
+		heMap.put('9', 9);
+		heMap.put('+', 0); heMap.put('0', 0);
+
+		CHARTABLE.add(1, Collections.unmodifiableMap(heMap));
+
+		CHARTABLE.add(2, Collections.unmodifiableMap(endefritmap));
+		CHARTABLE.add(3, Collections.unmodifiableMap(endefritmap));
+		CHARTABLE.add(4, Collections.unmodifiableMap(endefritmap));
+		CHARTABLE.add(5, Collections.unmodifiableMap(heMap));
+
 
 		// Russian
 		Map<Character, Integer> ruMap = new HashMap<Character, Integer>();
